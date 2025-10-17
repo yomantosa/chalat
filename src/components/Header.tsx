@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Menu as MenuIcon } from "lucide-react";
+import Image from "next/image";
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -10,7 +12,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-chalat-light/80 dark:supports-[backdrop-filter]:bg-chalat-dark/80 border-b border-chalat-accent/20">
       <div className="mx-auto max-w-7xl px-4 flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-semibold text-chalat-accent">
-          <img src="/favicon.ico" alt="ChaLat logo" className="h-8 w-8 rounded-xl object-contain" />
+          <Image src="https://raw.githubusercontent.com/yomantosa/chalat-webapp/refs/heads/main/src/app/favicon.ico" alt="ChaLat logo" className="h-8 w-8 rounded-xl object-contain" />
           <span className="text-lg tracking-wide">ChaLat</span>
         </a>
 

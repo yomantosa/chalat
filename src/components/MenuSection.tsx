@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Coffee, IceCream2, Martini } from "lucide-react";
-import DrinkCard from "./DrinkCard";
+// import DrinkCard from "./DrinkCard";
 
 const menuItems = [
   { id: 1, name: "Matcha Latte", desc: "Uji-grade matcha with fresh milk", price: 2.2, tag: "Best Seller", icon: <Coffee /> },

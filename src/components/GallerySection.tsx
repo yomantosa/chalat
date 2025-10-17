@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 
 export default function GallerySection() {
   const images = [
@@ -22,7 +24,7 @@ export default function GallerySection() {
         <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, i) => (
             <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="overflow-hidden rounded-2xl">
-              <img
+              <Image
                 src={src}
                 alt="ChaLat product"
                 className="w-full h-48 object-cover hover:scale-105 transition-transform"
