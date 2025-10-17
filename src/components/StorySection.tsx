@@ -1,29 +1,30 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function StorySection() {
   return (
     <section id="story" className="py-16 sm:py-20">
-      <div className="mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
         <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-chalat-text">Our Story</h2>
-          <p className="mt-3 text-zinc-700 dark:text-zinc-300">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Our Story</h2>
+          <p className="mt-3 text-chalat-accent/90">
             ChaLat was born from a simple idea: bring specialty drinks and snacks to the street — quick, consistent, and joyful.
+            Crafted by <strong>KonKhmer</strong>, our portable café serves thoughtfully sourced matcha, teas, and mochi with a Cambodian flavor profile.
           </p>
-          <ul className="mt-4 list-disc pl-5 space-y-2 text-chalat-text dark:text-chalat-highlight">
+          <ul className="mt-4 text-chalat-accent list-disc pl-5 space-y-2">
             <li>Customizable sweetness and ice.</li>
-            <li>Fresh milk only; no creamers.</li>
-            <li>Fast service from a compact setup.</li>
+            <li>Fresh milk only; no creamers in base drinks.</li>
+            <li>Fast service from a compact, clean setup.</li>
           </ul>
         </motion.div>
-        <motion.img
-          src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop"
-          alt="ChaLat Cart"
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="rounded-3xl shadow-2xl"
-        />
+        <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="relative rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop"
+            alt="ChaLat cart serving drinks"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
       </div>
     </section>
   );

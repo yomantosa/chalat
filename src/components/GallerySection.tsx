@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function GallerySection() {
@@ -13,16 +14,19 @@ export default function GallerySection() {
 
   return (
     <section id="gallery" className="py-16 sm:py-20">
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Gallery</h2>
-          <a href="https://instagram.com/chalat.official" className="text-sm hover:text-emerald-600">@chalat.official</a>
+          <a href="#" className="text-sm hover:text-chalat-accent">@chalat.official</a>
         </div>
-
         <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, i) => (
-            <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-              <img src={src} alt="ChaLat product" className="rounded-2xl w-full h-48 object-cover hover:scale-105 transition-transform" />
+            <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="overflow-hidden rounded-2xl">
+              <img
+                src={src}
+                alt="ChaLat product"
+                className="w-full h-48 object-cover hover:scale-105 transition-transform"
+              />
             </motion.div>
           ))}
         </div>
