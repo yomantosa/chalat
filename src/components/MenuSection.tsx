@@ -7,7 +7,7 @@ import DrinkCard from "./DrinkCard";
 const menuItems = [
   { id: 1, name: "Matcha Latte", desc: "Uji-grade matcha with fresh milk", price: 2.2, tag: "Best Seller", icon: <Coffee /> },
   { id: 2, name: "Dirty Matcha", desc: "Double shot espresso + matcha", price: 2.5, tag: "New", icon: <Martini /> },
-  { id: 3, name: "Thai Milk Tea", desc: "Bold black tea, silky and sweet", price: 1.8, icon: <Coffee /> },
+  { id: 3, name: "Milk Tea", desc: "Bold black tea, silky and sweet", price: 1.8, icon: <Coffee /> },
   { id: 4, name: "Brown Sugar Milk", desc: "Slow-cooked syrup, creamy", price: 2.0, icon: <Coffee /> },
   { id: 5, name: "Mochi Trio", desc: "Chewy, stuffed, fresh daily", price: 1.5, icon: <IceCream2 /> },
   { id: 6, name: "Yuzu Sparkle", desc: "Citrus soda, ice-cold", price: 1.7, icon: <Martini /> },
@@ -63,7 +63,7 @@ export default function MenuSection() {
             </motion.article>
           ))}
         </div>
-        <p className="mt-4 text-xs text-chalat-accent/70">Prices are indicative; adjust to your local market (Cambodia).</p>
+        <p className="mt-4 text-xs text-chalat-accent/70">Prices are indicative; adjust to local market (Cambodia).</p>
       </div>
     </section>
   );

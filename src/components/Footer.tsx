@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2 font-semibold text-chalat-accent">
-            <span className="inline-block h-6 w-6 rounded-xl bg-chalat-accent" />
+            <img src="/favicon.ico" alt="ChaLat logo" className="h-8 w-8 rounded-xl object-contain" />
             <span>ChaLat Snacks & Drinks</span>
           </div>
           <p className="mt-2 text-sm text-chalat-accent/70">

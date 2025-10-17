@@ -32,9 +32,10 @@ export default function Hero() {
           <div className="aspect-square rounded-3xl bg-chalat-light dark:bg-chalat-dark shadow-2xl p-6 flex items-center justify-center">
             <div className="grid grid-cols-2 gap-4 w-full">
               <DrinkCard name="Matcha Latte" tag="Best Seller" price={2.2} icon={<Coffee />} />
+              {/* <DrinkCard name="Cappucino" tag="Best Seller" price={2.2} icon={<Coffee />} /> */}
               <DrinkCard name="Mochi Trio" tag="Snack" price={1.5} icon={<IceCream2 />} />
               <DrinkCard name="Yuzu Sparkle" price={1.7} icon={<Martini />} />
-              <DrinkCard name="Thai Milk Tea" price={1.8} icon={<Coffee />} />
+              <DrinkCard name="Milk Tea" price={1.8} icon={<Coffee />} />
             </div>
           </div>
         </motion.div>

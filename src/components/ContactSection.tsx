@@ -3,8 +3,8 @@
 import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 const socials = [
-  { name: "Instagram", href: "https://instagram.com/", icon: <Instagram className="w-5 h-5" /> },
-  { name: "Facebook", href: "https://facebook.com/", icon: <Facebook className="w-5 h-5" /> },
+  { name: "Instagram", href: "https://www.instagram.com/tosa_vireak/", icon: <Instagram className="w-5 h-5" /> },
+  { name: "Facebook", href: "https://www.facebook.com/vireak.tosa/", icon: <Facebook className="w-5 h-5" /> },
 ];
 
 export default function ContactSection() {
@@ -35,7 +35,7 @@ export default function ContactSection() {
           </form>
           <div className="mt-6 flex flex-wrap gap-4 text-sm">
             <a className="inline-flex items-center gap-2 rounded-xl border border-chalat-accent/30 px-3 py-2" href="tel:+85512345678">
-              <Phone className="w-4 h-4" /> +855 12 345 678
+              <Phone className="w-4 h-4" /> +855 96 337 6525
             </a>
             <a className="inline-flex items-center gap-2 rounded-xl border border-chalat-accent/30 px-3 py-2" href="mailto:hello@chalat.co">
               <Mail className="w-4 h-4" /> hello@chalat.co
@@ -54,7 +54,7 @@ export default function ContactSection() {
             Book our portable café for office days, fairs, and private events.
           </p>
           <ul className="mt-4 space-y-2 text-chalat-accent list-disc pl-5">
-            <li>Flexible 2–6 hour slots</li>
+            <li>Flexible 2-6 hour slots</li>
             <li>Custom menu and branding available</li>
             <li>Up to 150 drinks/hour capacity</li>
           </ul>
