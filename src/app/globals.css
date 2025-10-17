@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* === ChaLat Custom Theme === */
+@theme {
+  --color-chalat-light: #fff9f3;
+  --color-chalat-text: #3b2f2f;
+  --color-chalat-accent: #a16b47;
+  --color-chalat-highlight: #d8a47f;
+  --color-chalat-dark: #1e140e;
+
+  /* Map defaults for convenience */
+  --color-background: var(--color-chalat-light);
+  --color-foreground: var(--color-chalat-text);
+
+  --font-sans: var(--font-geist-sans, 'Inter', sans-serif);
+  --font-mono: var(--font-geist-mono, monospace);
+}
+
+/* === Dark Mode === */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: var(--color-chalat-dark);
+    --color-foreground: var(--color-chalat-highlight);
+  }
+}
+
+/* === Global Layout Styles === */
+html {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  @apply min-h-screen antialiased;
+}
