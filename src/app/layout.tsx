@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "ChaLat",
   description: "Chalat by KonKhmer for Khmer",
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://raw.githubusercontent.com/yomantosa/chalat-webapp/refs/heads/main/src/app/favicon.ico",
   },
 };
 
