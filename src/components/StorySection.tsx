@@ -22,7 +22,7 @@ export default function StorySection() {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="relative rounded-3xl overflow-hidden shadow-2xl">
           <Image
-            src="/chalatStory.jpg"
+            src="https://github.com/yomantosa/chalat-webapp/blob/main/public/chalatStory.jpg?raw=true"
             alt="ChaLat cart serving drinks"
             width={800}
             height={600}
