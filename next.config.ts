@@ -1,26 +1,22 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
-    // ✅ Allow loading images from GitHub + raw.githubusercontent
     remotePatterns: [
       {
         protocol: "https",
         hostname: "github.com",
-        pathname: "/yomantosa/**", // replace with your username if different
+        port: "",
+        pathname: "/yomantosa/**",
       },
       {
         protocol: "https",
         hostname: "raw.githubusercontent.com",
+        port: "",
         pathname: "/yomantosa/**",
       },
     ],
   },
-
-  // ✅ Optional (for GitHub Pages)
-  // Uncomment these 2 lines only if you deploy to GitHub Pages instead of Vercel:
-  // output: "export",
-  // assetPrefix: "/chalat-webapp/",
 };
 
-export default nextConfig satisfies NextConfig;
+export default nextConfig;
