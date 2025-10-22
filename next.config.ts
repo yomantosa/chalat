@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         pathname: "/yomantosa/**",
       },
     ],
+    domains: [
+      "images.unsplash.com",
+      "raw.githubusercontent.com",
+      "cdn.pixabay.com",
+    ],
   },
 };
 
