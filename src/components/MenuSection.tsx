@@ -63,7 +63,7 @@ export default function MenuSection() {
             </motion.article>
           ))}
         </div>
-        <p className="mt-4 text-xs text-chalat-accent/70">Prices are indicative; adjust to local market (Cambodia).</p>
+        {/* <p className="mt-4 text-xs text-chalat-accent/70">Prices are indicative; adjust to local market (Cambodia).</p> */}
       </div>
     </section>
   );

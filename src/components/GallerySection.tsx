@@ -19,7 +19,7 @@ export default function GallerySection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Gallery</h2>
-          <a href="#" className="text-sm hover:text-chalat-accent">@chalat.official</a>
+          <a href="https://www.instagram.com/chalat_snacksndrinks" target="_blank" className="text-sm hover:text-chalat-accent">@chalat_snacksndrinks</a>
         </div>
         <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((src, i) => (
@@ -27,6 +27,8 @@ export default function GallerySection() {
               <Image
                 src={src}
                 alt="ChaLat product"
+                width={100}
+                height={48}
                 className="w-full h-48 object-cover hover:scale-105 transition-transform"
               />
             </motion.div>

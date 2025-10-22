@@ -10,6 +10,8 @@ export default function Footer() {
             <Image
                 src="https://raw.githubusercontent.com/yomantosa/chalat-webapp/refs/heads/main/src/app/favicon.ico"
                 alt="ChaLat logo"
+                width={64}
+                height={64}
                 className="h-8 w-8 rounded-xl object-contain"
             />
             <span>ChaLat Snacks & Drinks</span>
