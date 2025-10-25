@@ -47,7 +47,7 @@ export default function ContactSection() {
                 "textarea[name='details']"
               )?.value;
 
-              const res = await fetch("/api/sendTelegram", {
+              const res = await fetch("https://chalat-telegram-api.onrender.com/send", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, phone, details }),
@@ -55,7 +55,7 @@ export default function ContactSection() {
 
               const data = await res.json();
 
-              if (data.ok) {
+              if (data.ok) { 
                 setPopup({
                   message: "Order sent to Telegram!",
                   success: true,
